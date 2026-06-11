@@ -53,8 +53,8 @@
     ]
   },
   "logo": {
-    "light": "/images/Logo.png",
-    "dark": "/images/Logo.png",
+    "light": "/images/logos.png",
+    "dark": "/images/logos.png",
     "href": "https://craftpay.pl"
   },
   "navbar": {
