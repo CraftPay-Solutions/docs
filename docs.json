@@ -21,17 +21,21 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Dokumentacja",
+          "href": "https://docs.craftpay.pl",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
-    }
+    },
+    "groups": [
+      {
+        "group": "Strona Startowa",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -78,5 +82,6 @@
   },
   "appearance": {
     "default": "dark"
-  }
+  },
+  "description": "t"
 }
