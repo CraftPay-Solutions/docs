@@ -34,6 +34,18 @@
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "Płatności",
+        "pages": [
+          "test"
+        ]
+      },
+      {
+        "group": "Poradniki",
+        "pages": [
+          "test-1"
+        ]
       }
     ]
   },
