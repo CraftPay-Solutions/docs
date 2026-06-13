@@ -4,45 +4,50 @@ description: "Begin with a guide on the fastest path to a successful outcome"
 icon: "bahai"
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
+## Pobierz plugin
 
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
+Pobierz najnowszą wersję pluginu CraftPay dla swojego serwera Minecraft.
 
-## Prerequisites
+<Card title="Pobierz CraftPay Plugin" icon="download" href="https://github.com/craftpay-solutions/minecraft-plugin/releases/latest">
+  Kliknij tutaj, aby pobrać najnowszą wersję pluginu (.jar)
+</Card>
 
-Before you begin, you must have:
+<Info>
+  Plugin wspiera serwery **Spigot**, **Paper** oraz **Bukkit** w wersjach **1.8 - 1.21\+**.
+</Info>
 
-- Requirement one (for example, Node.js 18\+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
+## Wymagania
 
-## Get started
+Przed instalacją upewnij się, że posiadasz:
+
+- Serwer Minecraft (Spigot / Paper / Bukkit)
+- Java 17 lub nowsza
+- Konto na [panel.craftpay.pl](https://panel.craftpay.pl) oraz klucz API
+
+## Instalacja
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Pobierz plugin">
+    Pobierz plik `.jar` z linku powyżej.
+  </Step>
+  <Step title="Wgraj na serwer">
+    Umieść plik `CraftPay.jar` w folderze `plugins/` swojego serwera.
+  </Step>
+  <Step title="Uruchom serwer">
+    Zrestartuj serwer, aby plugin wygenerował domyślną konfigurację w `plugins/CraftPay/config.yml`.
+  </Step>
+  <Step title="Skonfiguruj klucz API">
+    Otwórz `config.yml` i wklej swój klucz API ze strony [panel.craftpay.pl](https://panel.craftpay.pl).
 
-    ```bash
-    npm install your-package
+    ```yaml
+    api-key: "TWÓJ_KLUCZ_API"
     ```
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
-
-    ```bash
-    your-cli init
-    ```
-  </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
-
-    ```bash
-    your-cli start
-    ```
+  <Step title="Przeładuj plugin">
+    Wykonaj komendę `/craftpay reload`, aby zastosować zmiany.
   </Step>
 </Steps>
 
 <Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
-
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
+  Potrzebujesz pomocy? Napisz do nas na [support@craftpay.pl](mailto:support@craftpay.pl) lub dołącz na nasz [Discord](https://discord.gg/craftpay).
 </Tip>
