@@ -1,6 +1,6 @@
 ---
 title: "Minecraft Plugin"
-description: "Begin with a guide on the fastest path to a successful outcome"
+description: "Plugin służy do integracji itemshopu i serwera minecraft"
 icon: "bahai"
 ---
 
@@ -22,7 +22,7 @@ Przed instalacją upewnij się, że posiadasz:
 
 - Serwer Minecraft (Spigot / Paper / Bukkit)
 - Java 17 lub nowsza
-- Konto na [panel.craftpay.pl](https://panel.craftpay.pl) oraz klucz API
+- Konto na [app.craftpay.pl](https://panel.craftpay.pl) oraz klucz API
 
 ## Instalacja
 
@@ -31,16 +31,16 @@ Przed instalacją upewnij się, że posiadasz:
     Pobierz plik `.jar` z linku powyżej.
   </Step>
   <Step title="Wgraj na serwer">
-    Umieść plik `CraftPay.jar` w folderze `plugins/` swojego serwera.
+    Umieść plik `craftpay-1.8.8.jar` w folderze `plugins/` swojego serwera.
   </Step>
   <Step title="Uruchom serwer">
     Zrestartuj serwer, aby plugin wygenerował domyślną konfigurację w `plugins/CraftPay/config.yml`.
   </Step>
   <Step title="Skonfiguruj klucz API">
-    Otwórz `config.yml` i wklej swój klucz API ze strony [panel.craftpay.pl](https://panel.craftpay.pl).
+    Otwórz `config.yml` i wklej swój klucz API ze strony [app.craftpay.pl](https://panel.craftpay.pl).
 
     ```yaml
-    api-key: "TWÓJ_KLUCZ_API"
+    api_secret: "TWOJ_SEKRET_KEY"
     ```
   </Step>
   <Step title="Przeładuj plugin">
