@@ -1,0 +1,76 @@
+---
+title: "Dodawanie zdjęć przez Imgur"
+description: "Jak hostować zdjęcia na Imgurze i używać ich w CraftPay"
+icon: "image"
+---
+
+W tym poradniku dowiesz się, jak dodać własne zdjęcia (np. ikony produktów, bannery) do swojego sklepu CraftPay za pomocą darmowego hostingu **Imgur**.
+
+## Dlaczego Imgur?
+
+- **Darmowy** – nie wymaga konta dla podstawowego użycia
+- **Szybki** – CDN gwarantuje błyskawiczne ładowanie zdjęć
+- **Bez limitów** – brak limitu transferu dla zwykłych użytkowników
+- **Stabilny** – jeden z największych hostingów obrazów na świecie
+
+## Jak wgrać zdjęcie
+
+<Steps>
+  <Step title="Wejdź na Imgur">
+    Otwórz stronę [imgur.com](https://imgur.com) w przeglądarce.
+  </Step>
+  <Step title="Kliknij „New post”">
+    W prawym górnym rogu kliknij przycisk **New post** (lub **\+** na telefonie).
+  </Step>
+  <Step title="Wybierz plik">
+    Przeciągnij swoje zdjęcie na stronę lub kliknij **Choose Photo / Video** i wybierz plik z dysku.
+
+    <Tip>
+      Zalecane formaty: **PNG**, **JPG**, **WEBP**. Maksymalny rozmiar: **20 MB**.
+    </Tip>
+  </Step>
+  <Step title="Skopiuj bezpośredni link">
+    Po wgraniu kliknij prawym przyciskiem myszy na zdjęcie → **Kopiuj adres obrazu** (Copy image address).
+
+    Link powinien wyglądać tak:
+
+    ```text
+    https://i.imgur.com/AbCdEfG.png
+    ```
+
+    <Warning>
+      **NIE używaj** linku typu `https://imgur.com/AbCdEfG` – to link do strony, a nie do samego obrazu. Musi być z domeną **`i.imgur.com`** oraz rozszerzeniem pliku (`.png`, `.jpg`).
+    </Warning>
+  </Step>
+  <Step title="Wklej link w panelu CraftPay">
+    Zaloguj się na [panel.craftpay.pl](https://panel.craftpay.pl), przejdź do edycji produktu/sklepu i wklej skopiowany link w polu zdjęcia.
+  </Step>
+</Steps>
+
+## Częste problemy
+
+<AccordionGroup>
+  <Accordion title="Zdjęcie się nie wyświetla">
+    Upewnij się, że link zaczyna się od `https://i.imgur.com/` i kończy rozszerzeniem pliku (np. `.png`, `.jpg`). Link do strony Imgura nie zadziała.
+  </Accordion>
+
+  <Accordion title="Imgur usunął moje zdjęcie">
+    Imgur może usuwać zdjęcia, które nie były oglądane przez długi czas (jeśli zostały wgrane anonimowo). Załóż darmowe konto, aby zdjęcia były trwałe.
+  </Accordion>
+
+  <Accordion title="Zdjęcie ładuje się wolno">
+    Zoptymalizuj zdjęcie przed wgraniem – zalecany rozmiar to maksymalnie **1 MB** dla ikon produktów i **2 MB** dla bannerów.
+  </Accordion>
+</AccordionGroup>
+
+## Alternatywy
+
+Jeśli nie chcesz korzystać z Imgura, możesz użyć:
+
+- [postimages.org](https://postimages.org) – prosty, bez konta
+- [imgbb.com](https://imgbb.com) – szybki, darmowy
+- Własny hosting / CDN
+
+<Info>
+  Potrzebujesz pomocy? Napisz do nas na [support@craftpay.pl](mailto:support@craftpay.pl).
+</Info>

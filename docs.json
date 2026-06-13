@@ -35,7 +35,7 @@
         "group": "Start",
         "pages": [
           "index",
-          "quickstart"
+          "minecraft-plugin"
         ]
       },
       {
@@ -47,7 +47,8 @@
       {
         "group": "Poradniki",
         "pages": [
-          "test-1"
+          "test-1",
+          "poradniki/dodawanie-zdjec-imgur.mdx"
         ]
       }
     ]
