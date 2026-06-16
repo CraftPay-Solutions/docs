@@ -41,22 +41,15 @@
       {
         "group": "Płatności",
         "pages": [
-          "test",
-          {
-            "group": "Bramki płatności",
-            "icon": "credit-card",
-            "pages": [
-              "platnosci/index.mdx",
-              "platnosci/paybylink.mdx",
-              "platnosci/oxapay.mdx",
-              "platnosci/paypal.mdx",
-              "platnosci/dpay.mdx",
-              "platnosci/stripe.mdx",
-              "platnosci/simpay.mdx",
-              "platnosci/hotpay.mdx",
-              "platnosci/cashbill.mdx"
-            ]
-          }
+          "platnosci/start",
+          "platnosci/paybylink",
+          "platnosci/oxapay",
+          "platnosci/dpay",
+          "platnosci/stripe",
+          "platnosci/simpay",
+          "platnosci/hotpay",
+          "platnosci/cashbill",
+          "platnosci/paypal"
         ]
       }
     ]
