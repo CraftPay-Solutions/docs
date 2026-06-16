@@ -41,12 +41,7 @@
       {
         "group": "Płatności",
         "pages": [
-          "test"
-        ]
-      },
-      {
-        "group": "Poradniki",
-        "pages": [
+          "test",
           {
             "group": "Bramki płatności",
             "icon": "credit-card",
