@@ -1,0 +1,41 @@
+---
+title: "OxaPay"
+description: "Konfiguracja bramki OxaPay (kryptowaluty)"
+icon: "bitcoin"
+---
+
+**OxaPay** umożliwia przyjmowanie płatności kryptowalutowych — BTC, ETH, USDT, LTC i wiele innych. Możesz włączyć automatyczną konwersję do USDT.
+
+<Frame>
+  ![Konfiguracja OxaPay w panelu CraftPay](/images/platnosci/oxapay.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto lub zaloguj się">
+    Przejdź na [app.oxapay.com](https://app.oxapay.com) i zaloguj się. Jeśli nie masz konta — zarejestruj się bezpłatnie.
+  </Step>
+  <Step title="Przejdź do sekcji Merchant">
+    Po zalogowaniu przejdź do **Merchant Service** w menu bocznym. Kliknij **Add Merchant** i podaj nazwę swojego sklepu.
+  </Step>
+  <Step title="Włącz obsługiwane kryptowaluty">
+    W ustawieniach Merchant wybierz kryptowaluty, które chcesz akceptować (BTC, ETH, USDT, LTC i inne). Możesz też włączyć opcję **auto-konwersji do USDT**.
+  </Step>
+  <Step title="Wklej adres powiadomień (Callback URL)">
+    W zakładce **Settings** Twojego Merchant wklej poniższy adres w polu **Callback URL**:
+
+    ```text
+    https://pay.craftpay.pl/webhook/oxapay
+    ```
+
+    OxaPay wyśle tam potwierdzenie każdej płatności kryptowalutowej.
+  </Step>
+  <Step title="Skopiuj Merchant API Key">
+    W panelu Merchant skopiuj **API Key** (format: `XXXXXX-XXXXXX-XXXXXX-XXXXXX`). Wklej go w pole **Merchant API Key** w panelu CraftPay i kliknij **Zapisz konfigurację**.
+  </Step>
+</Steps>
+
+<Info>
+  OxaPay wspiera ponad 30 kryptowalut. Pełną listę znajdziesz w panelu Merchant po zalogowaniu.
+</Info>

@@ -1,0 +1,39 @@
+---
+title: "PayPal"
+description: "Konfiguracja bramki PayPal"
+icon: "paypal"
+---
+
+**PayPal** umożliwia przyjmowanie płatności międzynarodowych. Wymaga konta PayPal Business.
+
+<Frame>
+  ![Konfiguracja PayPal w panelu CraftPay](/images/platnosci/paypal.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto PayPal Business">
+    Przejdź na [paypal.com/pl/business](https://paypal.com/pl/business) i utwórz konto firmowe (Business). Jeśli masz już konto osobiste, możesz je przekonwertować do Business w ustawieniach profilu.
+  </Step>
+  <Step title="Przejdź do PayPal Developer Dashboard">
+    Zaloguj się na [developer.paypal.com](https://developer.paypal.com) używając tych samych danych co Twoje konto Business.
+  </Step>
+  <Step title="Utwórz nową aplikację REST API">
+    W panelu developera przejdź do **Apps & Credentials → Create App**. Podaj nazwę aplikacji (np. "Mój Sklep"). Po zapisaniu PayPal wygeneruje **Client ID** i **Client Secret**.
+  </Step>
+  <Step title="Przełącz się na tryb Live">
+    W górnym prawym rogu panelu przełącz przełącznik z **Sandbox** na **Live**, aby zobaczyć klucze produkcyjne. Skopiuj **Client ID** i **Client Secret** z sekcji Live.
+  </Step>
+  <Step title="Wklej klucze w formularzu">
+    Wklej skopiowane klucze w pola **Client ID** i **Client Secret** w panelu CraftPay i kliknij **Zapisz konfigurację**.
+  </Step>
+</Steps>
+
+<Tip>
+  PayPal **nie wymaga konfiguracji webhook** — weryfikacja odbywa się automatycznie po powrocie kupującego ze strony PayPal.
+</Tip>
+
+<Warning>
+  Upewnij się, że używasz kluczy z trybu **Live**, a nie **Sandbox** — inaczej płatności nie będą działać w produkcji.
+</Warning>

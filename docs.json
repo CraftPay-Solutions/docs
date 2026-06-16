@@ -46,7 +46,23 @@
       },
       {
         "group": "Poradniki",
-        "pages": []
+        "pages": [
+          {
+            "group": "Bramki płatności",
+            "icon": "credit-card",
+            "pages": [
+              "platnosci/index.mdx",
+              "platnosci/paybylink.mdx",
+              "platnosci/oxapay.mdx",
+              "platnosci/paypal.mdx",
+              "platnosci/dpay.mdx",
+              "platnosci/stripe.mdx",
+              "platnosci/simpay.mdx",
+              "platnosci/hotpay.mdx",
+              "platnosci/cashbill.mdx"
+            ]
+          }
+        ]
       }
     ]
   },

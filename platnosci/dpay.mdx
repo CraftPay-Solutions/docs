@@ -1,0 +1,41 @@
+---
+title: "dPay"
+description: "Konfiguracja bramki dPay"
+icon: "wallet"
+---
+
+**dPay** to polska bramka płatności obsługująca BLIK, przelewy bankowe i karty płatnicze.
+
+<Frame>
+  ![Konfiguracja dPay w panelu CraftPay](/images/platnosci/dpay.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto lub zaloguj się">
+    Przejdź na [panel.dpay.pl](https://panel.dpay.pl) i zaloguj się. Jeśli nie masz konta — zarejestruj się i przejdź weryfikację (dane firmy, IBAN, dokumenty).
+  </Step>
+  <Step title="Dodaj nową usługę">
+    W panelu przejdź do **Punkty Płatności → Services → Dodaj usługę**. Podaj nazwę usługi (5–30 znaków, bez spacji) — to będzie Twój identyfikator w API (pole `service`).
+  </Step>
+  <Step title="Skonfiguruj kanały płatności">
+    Uzupełnij URL sklepu, regulaminu i reklamacji. W sekcji kanałów zaznacz metody, które chcesz udostępnić kupującym (BLIK, przelew bankowy, karta).
+  </Step>
+  <Step title="Wklej adres powiadomień IPN">
+    W zakładce **Ustawienia techniczne** znajdź pole **URL powiadomień (IPN)** i wklej poniższy adres:
+
+    ```text
+    https://pay.craftpay.pl/webhook/dpay
+    ```
+
+    dPay wyśle tam potwierdzenie każdej płatności.
+  </Step>
+  <Step title="Skopiuj nazwę usługi i Hash Key">
+    W tych samych ustawieniach technicznych skopiuj **Hash Key** (klucz tajny). Wklej go razem z nazwą usługi w pola formularza w panelu CraftPay i kliknij **Zapisz konfigurację**.
+  </Step>
+</Steps>
+
+<Warning>
+  Weryfikacja konta dPay może trwać do 48h — nie będziesz mógł przyjmować płatności przed jej zakończeniem.
+</Warning>

@@ -1,0 +1,39 @@
+---
+title: "CashBill"
+description: "Konfiguracja bramki CashBill"
+icon: "money-bill"
+---
+
+**CashBill** to polska bramka płatności obsługująca BLIK, przelewy bankowe oraz karty płatnicze.
+
+<Frame>
+  ![Konfiguracja CashBill w panelu CraftPay](/images/platnosci/cashbill.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto lub zaloguj się">
+    Przejdź na [cashbill.pl](https://cashbill.pl) i zaloguj się do swojego panelu operatora.
+  </Step>
+  <Step title="Dodaj nowy sklep">
+    W panelu CashBill przejdź do sekcji **Sklepy →** kliknij **Dodaj sklep**. Wypełnij nazwę sklepu i dane kontaktowe.
+  </Step>
+  <Step title="Ustaw platformę sklepową">
+    W polu **Platforma sklepowa** wybierz **Inna platforma / rozwiązanie dedykowane**. Rodzaj interfejsu komunikacji ustaw na **Web Service (REST)**.
+  </Step>
+  <Step title="Wklej adres powiadomień (notifyUrl)">
+    W polu **Adres serwerowego potwierdzenia transakcji** wklej poniższy URL — tam CashBill wyśle potwierdzenie płatności:
+
+    ```text
+    https://pay.craftpay.pl/webhook/cashbill
+    ```
+  </Step>
+  <Step title="Skopiuj Shop ID i klucz tajny">
+    Po zapisaniu sklepu CashBill wyświetli Twój **Shop ID** i **klucz tajny (Secret Key)**. Skopiuj oba i wklej w pola formularza w panelu CraftPay.
+  </Step>
+</Steps>
+
+<Tip>
+  Możesz włączyć **Tryb testowy (Sandbox)** w panelu CraftPay, jeśli chcesz najpierw przetestować integrację. W trybie produkcyjnym żądania trafiają do CashBill.pl.
+</Tip>

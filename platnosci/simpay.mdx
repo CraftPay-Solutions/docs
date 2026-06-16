@@ -1,0 +1,37 @@
+---
+title: "SimPay"
+description: "Konfiguracja bramki SimPay"
+icon: "mobile"
+---
+
+**SimPay** umożliwia przyjmowanie płatności SMS oraz Online Payments (BLIK, przelewy, karty).
+
+<Frame>
+  ![Konfiguracja SimPay w panelu CraftPay](/images/platnosci/simpay.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto lub zaloguj się">
+    Przejdź na [simpay.pl](https://simpay.pl) i zaloguj się do panelu sprzedawcy.
+  </Step>
+  <Step title="Wygeneruj klucz API">
+    W panelu przejdź do sekcji **Ustawienia → Klucze API** i kliknij **Generuj nowy klucz**. Skopiuj wygenerowany klucz i wklej go w pole **Klucz API**.
+  </Step>
+  <Step title="Dodaj usługę Online Payments">
+    Przejdź do sekcji **Usługi → Dodaj usługę →** wybierz typ **Online Payments**. Po zapisaniu skopiuj **ID Usługi** i **Hash usługi**.
+  </Step>
+  <Step title="Wklej adres URL powiadomień (IPN)">
+    W ustawieniach usługi znajdź pole **URL powiadomień (IPN)** i wklej poniższy adres:
+
+    ```text
+    https://pay.craftpay.pl/webhook/simpay
+    ```
+
+    SimPay wyśle tam potwierdzenie każdej płatności.
+  </Step>
+  <Step title="Uzupełnij formularz">
+    Wklej **Klucz API**, **ID Usługi** oraz **Hash usługi** w odpowiednie pola w panelu CraftPay i kliknij **Zapisz konfigurację**.
+  </Step>
+</Steps>

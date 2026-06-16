@@ -1,0 +1,35 @@
+---
+title: "Stripe"
+description: "Konfiguracja bramki Stripe"
+icon: "stripe"
+---
+
+**Stripe** to globalna bramka płatności obsługująca BLIK, Przelewy24 oraz karty płatnicze.
+
+<Frame>
+  ![Konfiguracja Stripe w panelu CraftPay](/images/platnosci/stripe.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto lub zaloguj się">
+    Przejdź na [stripe.com](https://stripe.com) i zaloguj się do Stripe Dashboard. Jeśli nie masz konta — zarejestruj się bezpłatnie.
+  </Step>
+  <Step title="Aktywuj konto (weryfikacja)">
+    Aby przyjmować prawdziwe płatności, musisz aktywować konto. Przejdź do panelu **→ Zacznij przyjmować płatności**, wypełnij dane firmy, podaj IBAN i prześlij wymagane dokumenty.
+  </Step>
+  <Step title="Skopiuj klucze API">
+    W panelu Stripe przejdź do **Developers → API keys**. Skopiuj **Publishable key** (zaczyna się od `pk_live_`) i **Secret key** (`sk_live_`).
+  </Step>
+  <Step title="Włącz BLIK i Przelewy24">
+    W panelu przejdź do **Settings → Payment methods** i sprawdź, czy metody **BLIK** oraz **Przelewy24 (P24)** są aktywne dla Twojego konta.
+  </Step>
+  <Step title="Wklej klucze w formularzu">
+    Wklej skopiowane klucze w pola formularza w panelu CraftPay i kliknij **Zapisz konfigurację**.
+  </Step>
+</Steps>
+
+<Tip>
+  Stripe **nie wymaga osobnego adresu webhook** — weryfikacja odbywa się automatycznie po powrocie kupującego ze strony płatności.
+</Tip>

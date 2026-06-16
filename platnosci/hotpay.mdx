@@ -1,0 +1,41 @@
+---
+title: "HotPay"
+description: "Konfiguracja bramki HotPay"
+icon: "fire"
+---
+
+**HotPay** umożliwia przyjmowanie płatności BLIK, przelewów bankowych i SMS.
+
+<Frame>
+  ![Konfiguracja HotPay w panelu CraftPay](/images/platnosci/hotpay.png)
+</Frame>
+
+## Konfiguracja
+
+<Steps>
+  <Step title="Utwórz konto lub zaloguj się">
+    Przejdź na [hotpay.pl](https://hotpay.pl) i zaloguj się do panelu sprzedawcy.
+  </Step>
+  <Step title="Dodaj nową usługę i skopiuj SEKRET">
+    W panelu przejdź do sekcji **Usługi → Dodaj usługę**. Po zapisaniu HotPay wyświetli Twój **SEKRET** (klucz usługi) — skopiuj go.
+  </Step>
+  <Step title="Wklej adres URL powiadomień (IPN)">
+    W ustawieniach usługi znajdź pole **Adres URL powiadomień** i wklej poniższy adres:
+
+    ```text
+    https://pay.craftpay.pl/webhook/hotpay
+    ```
+
+    HotPay wyśle tam potwierdzenie każdej płatności.
+  </Step>
+  <Step title="Ustaw hasło notyfikacji">
+    W ustawieniach usługi ustaw własne **Hasło notyfikacji (HASŁO Z USTAWIEŃ)** — dowolny ciąg znaków. Wpisz to samo hasło w pole formularza w panelu CraftPay.
+  </Step>
+  <Step title="Zapisz konfigurację">
+    Wklej **SEKRET** i **Hasło notyfikacji** w odpowiednie pola w panelu CraftPay i kliknij **Zapisz konfigurację**.
+  </Step>
+</Steps>
+
+<Warning>
+  Hasło notyfikacji ustawione w panelu HotPay **musi być identyczne** jak to wpisane w panelu CraftPay — inaczej powiadomienia będą odrzucane.
+</Warning>

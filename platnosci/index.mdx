@@ -1,0 +1,77 @@
+---
+title: "Wprowadzenie"
+sidebarTitle: "Wprowadzenie"
+description: "Skonfiguruj bramkę płatności w CraftPay"
+icon: "list"
+---
+
+CraftPay wspiera **8 popularnych bramek płatności**. Wszystkie płatności są przetwarzane przez zewnętrzną bramkę i przekierowywane przez `pay.craftpay.pl`.
+
+<Warning>
+  Przed włączeniem bramki upewnij się, że masz **aktywne konto** w danym serwisie płatności.
+</Warning>
+
+## Jak dodać bramkę?
+
+<Steps>
+  <Step title="Wejdź w panel CraftPay">
+    Zaloguj się na [panel.craftpay.pl](https://panel.craftpay.pl) i wybierz swój sklep.
+  </Step>
+  <Step title="Otwórz zakładkę Bramki płatności">
+    W menu bocznym kliknij **Bramki płatności**, a następnie przycisk **\+ Dodaj bramkę**.
+
+    <Frame>
+      ![Podstrona bramki płatności](/images/platnosci/podstrona-bramki.png)
+    </Frame>
+  </Step>
+  <Step title="Wybierz operatora">
+    Z listy wybierz bramkę, którą chcesz podłączyć.
+
+    <Frame>
+      ![Wybór bramki płatności](/images/platnosci/wybor-bramki.png)
+    </Frame>
+  </Step>
+  <Step title="Skonfiguruj bramkę">
+    Postępuj zgodnie z instrukcją dla wybranej bramki — zobacz poradniki poniżej.
+  </Step>
+</Steps>
+
+## Dostępne bramki
+
+<CardGroup cols={2}>
+  <Card title="PayByLink" icon="link" href="/platnosci/paybylink">
+    BLIK, przelewy bankowe, karty płatnicze
+  </Card>
+
+  <Card title="OxaPay" icon="bitcoin" href="/platnosci/oxapay">
+    Kryptowaluty (BTC, ETH, USDT, LTC)
+  </Card>
+
+  <Card title="PayPal" icon="paypal" href="/platnosci/paypal">
+    Płatności międzynarodowe PayPal
+  </Card>
+
+  <Card title="dPay" icon="wallet" href="/platnosci/dpay">
+    BLIK, przelewy, karty
+  </Card>
+
+  <Card title="Stripe" icon="stripe" href="/platnosci/stripe">
+    BLIK, Przelewy24, karty
+  </Card>
+
+  <Card title="SimPay" icon="mobile" href="/platnosci/simpay">
+    SMS, Online Payments
+  </Card>
+
+  <Card title="HotPay" icon="fire" href="/platnosci/hotpay">
+    BLIK, przelewy, SMS
+  </Card>
+
+  <Card title="CashBill" icon="money-bill" href="/platnosci/cashbill">
+    BLIK, przelewy, karty
+  </Card>
+</CardGroup>
+
+<Info>
+  Każda bramka ma swój unikalny **URL powiadomień (webhook)** w formacie `https://pay.craftpay.pl/webhook/<nazwa>`. Musisz wkleić go w ustawieniach swojej bramki, aby płatności były poprawnie weryfikowane.
+</Info>
