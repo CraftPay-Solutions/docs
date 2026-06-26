@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "CraftPay - Wiki",
   "colors": {
-    "primary": "#FF9500",
-    "light": "#FF9500",
-    "dark": "#FF9500"
+    "primary": "#BAFF31",
+    "light": "#BAFF31",
+    "dark": "#BAFF31"
   },
   "favicon": {
     "light": "/images/Logo.png",
