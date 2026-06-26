@@ -8,8 +8,8 @@
     "dark": "#BAFF31"
   },
   "favicon": {
-    "light": "/images/Logo.png",
-    "dark": "/images/Logo.png"
+    "light": "/images/Vector27.png",
+    "dark": "/images/Vector27.png"
   },
   "navigation": {
     "pages": [
@@ -55,8 +55,8 @@
     ]
   },
   "logo": {
-    "light": "/images/logos.png",
-    "dark": "/images/logos.png",
+    "light": "/images/Vector27.png",
+    "dark": "/images/Vector27.png",
     "href": "https://craftpay.pl"
   },
   "navbar": {
